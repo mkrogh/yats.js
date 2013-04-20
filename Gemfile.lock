@@ -3,7 +3,12 @@ GEM
   specs:
     daemons (1.1.9)
     eventmachine (1.0.3)
+    libv8 (3.11.8.13)
     rack (1.5.2)
+    ref (1.0.2)
+    therubyracer (0.11.3)
+      libv8 (~> 3.11.8.12)
+      ref
     thin (1.5.1)
       daemons (>= 1.0.9)
       eventmachine (>= 0.12.6)
@@ -14,4 +19,5 @@ PLATFORMS
 
 DEPENDENCIES
   rack
+  therubyracer
   thin
