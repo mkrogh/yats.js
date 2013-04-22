@@ -1,4 +1,4 @@
-define(["models", "views"], function(models, views){
+(function(models, views){
   /*
     Find each column...
     Insert icon and attatch click handler
@@ -18,4 +18,4 @@ define(["models", "views"], function(models, views){
  },1000);
 
  //end bootstrap
-});
+})(TSort.models, TSort.views);

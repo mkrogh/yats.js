@@ -1,4 +1,5 @@
-define(["helpers/util"],function(_){
+var TSort = TSort || {};
+TSort.views = (function(_){
 
   var tableView = function(tableModel){
     var tableSortObserver = function(rows){
@@ -24,4 +25,4 @@ define(["helpers/util"],function(_){
   return {
     table: tableView
   }
-});
+})(_);

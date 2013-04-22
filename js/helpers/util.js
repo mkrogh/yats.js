@@ -1,4 +1,4 @@
-define(function(){
+var _ = simpleDash = (function(){
   var each = function(elements, fn){
     for(var i = 0; i < elements.length; i++){
       //Call function with args (element, index)
@@ -34,4 +34,4 @@ define(function(){
     observable: observable
   };
 
-});
+})();

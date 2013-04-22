@@ -1,4 +1,6 @@
-define(["helpers/dom","helpers/util"],function($,_){
+var TSort = TSort || {};
+
+TSort.models = (function($,_){
   /**
    * Creates a row model. Extracts text from rows for faster access.
    */
@@ -48,7 +50,7 @@ define(["helpers/dom","helpers/util"],function($,_){
         if(a.columns[i] < b.columns[i])
           return 1;
         if(a.columns[i] > b.columns[i])
-          return -1;
+        return -1;
         //same same
         return 0;
       };
@@ -73,4 +75,4 @@ define(["helpers/dom","helpers/util"],function($,_){
     row: rowModel,
     table: tableModel
   }
-});
+})($,_);
