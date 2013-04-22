@@ -1,0 +1,7 @@
+{
+  "basePath": "js/",
+  "load": [
+    "helpers/shims", "helpers/util", "helpers/dom",
+    "models", "views", "table_sort"
+  ]
+}
