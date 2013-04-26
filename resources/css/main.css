@@ -1,6 +1,6 @@
 @import url("../bootstrap/css/bootstrap.min.css");
 @import url("../bootstrap/css/bootstrap-responsive.min.css");
-@import url("tsort.css");
+@import url("yats.css");
 body {
   padding-top: 40px;
   background-color: #666666; }

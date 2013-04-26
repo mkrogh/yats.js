@@ -10,11 +10,14 @@
 
 
 //bootstrap
- var table = models.table(".table");
- var view = views.table(table);
- var sortView = views.sortControls(table, controllers);
 
+  window.sortTable = function(selector){
+    var table = models.table(selector);
+    var view = views.table(table);
+    var sortView = views.sortControls(table, controllers);
+  }
  
+ sortTable("table[data-tablesort]");
 
  //end bootstrap
 })(TSort.models, TSort.views, TSort.controllers);

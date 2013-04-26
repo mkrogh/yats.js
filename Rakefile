@@ -23,8 +23,8 @@ namespace :distribute do
 
     compiled_js = Uglifier.new.compile(js_sources)
 
-    write_file("dist/output.min.js", compiled_js)
-    write_file("dist/output.js", js_sources)
+    write_file("dist/yats.min.js", compiled_js)
+    write_file("dist/yats.js", js_sources)
   end
   
   task :clean do
@@ -40,7 +40,7 @@ namespace :distribute do
 
   task :html_output do 
     puts "Generating html example page..."
-    index_html = open("index.html").read.gsub(/src='js\/dev-include.js'/,"src='output.min.js'") 
+    index_html = open("index.html").read.gsub(/src='js\/dev-include.js'/,"src='yats.min.js'") 
     write_file("dist/index.html", index_html)
     FileUtils.cp_r "resources", "dist"
   end
