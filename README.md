@@ -3,6 +3,8 @@ Yet another table sorter
 
 Yats.js is a simple javascript table sorter.
 
+You can use it if you want, but mostly this table sorter was an exercise for me to do some vanilla js MVC style.
+
 
 Usage
 -----
