@@ -9,3 +9,4 @@
 *.vi
 *~
 *.sass-cache
+dist/

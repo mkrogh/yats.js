@@ -3,7 +3,10 @@ GEM
   specs:
     daemons (1.1.9)
     eventmachine (1.0.3)
+    execjs (1.4.0)
+      multi_json (~> 1.0)
     libv8 (3.11.8.13)
+    multi_json (1.6.1)
     rack (1.5.2)
     ref (1.0.2)
     therubyracer (0.11.3)
@@ -13,6 +16,9 @@ GEM
       daemons (>= 1.0.9)
       eventmachine (>= 0.12.6)
       rack (>= 1.0.0)
+    uglifier (1.3.0)
+      execjs (>= 0.3.0)
+      multi_json (~> 1.0, >= 1.0.2)
 
 PLATFORMS
   ruby
@@ -21,3 +27,4 @@ DEPENDENCIES
   rack
   therubyracer
   thin
+  uglifier
