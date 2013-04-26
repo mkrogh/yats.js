@@ -6,6 +6,8 @@ task :server do
 end
 
 
+task :clean => "distribute:clean"
+
 task :dist => "distribute:run"
 
 namespace :distribute do
@@ -24,11 +26,15 @@ namespace :distribute do
     write_file("dist/output.min.js", compiled_js)
     write_file("dist/output.js", js_sources)
   end
-
+  
+  task :clean do
+    puts "Removing dist dir"
+    FileUtils.rm_r "dist" if File.exists? "dist"
+  end
 
   task :dist_dir do
     puts "Creating dist dir" 
-    FileUtils.mkdir_p "dist"
+    FileUtils.mkdir_p "dist" 
   end
 
 
