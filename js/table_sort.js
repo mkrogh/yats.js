@@ -1,4 +1,4 @@
-(function(models, views){
+(function(models, views, controllers){
   /*
     Find each column...
     Insert icon and attatch click handler
@@ -12,10 +12,9 @@
 //bootstrap
  var table = models.table(".table");
  var view = views.table(table);
+ var sortView = views.sortControls(table, controllers);
+
  
- setTimeout(function(){
-  table.sort(5, false);
- },1000);
 
  //end bootstrap
-})(TSort.models, TSort.views);
+})(TSort.models, TSort.views, TSort.controllers);

@@ -14,7 +14,7 @@ TSort.models = (function($,_){
       if(!isNaN(value) && "" != value)
         data[i] = parseInt(value, 10);
       else
-        data[i] = value;
+        data[i] = value.toLowerCase();
     });
 
     return {
@@ -67,7 +67,8 @@ TSort.models = (function($,_){
       rows: rows,
       sort: sort,
       table: table,
-      sortObserver: sortObserver
+      sortObserver: sortObserver,
+      rowSelector: row_selector
     }
   }
 
