@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Yats.js by mkrogh</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Yats.js</h1>
+        <p>Yet another (js) table sorter</p>
+        <p class="view"><a href="https://github.com/mkrogh/yats.js">View the Project on GitHub <small>mkrogh/yats.js</small></a></p>
+        <ul>
+          <li><a href="https://github.com/mkrogh/yats.js/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/mkrogh/yats.js/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/mkrogh/yats.js">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>Yet another table sorter</h1>
+
+<p>Yats.js is a simple javascript table sorter.</p>
+
+<p>You can use it if you want, but mostly this table sorter was an exercise for me to do some vanilla js MVC style.</p>
+
+<h2>Usage</h2>
+
+<p>To use yats.js include <code>yats.js</code> at the bottom of your page. Furthermore you will need to include the <code>yats.css</code> file and the font-awesome.</p>
+
+<p>There are two ways to target your tables: </p>
+
+<ol>
+<li>Add a <code>data-tablesort</code>attribute to the tables you want to enable sorting on.</li>
+<li>Call <code>sortTable(".your-selector");</code>
+</li>
+</ol><h2>Shortcommings</h2>
+
+<p>At the moment yats.js has some limitations. It expects your table have a layout like so:</p>
+
+<pre><code>&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Headings&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Content&lt;/td&gt;
+    &lt;/tr&gt;
+    ...
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</code></pre>
+
+<h2>Styling</h2>
+
+<p>Since <code>yats.js</code> uses <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a>, you might want to get rid of that dependency. You can take a look at the <code>yats.css</code> file, it is really small.</p>
+
+<h2>Development</h2>
+
+<p>To play around, or develop it you can use:</p>
+
+<pre><code>bundle install
+rake server
+</code></pre>
+
+<h2>License</h2>
+
+<p>See license.txt</p>
+      </section>
+    </div>
+    <footer>
+      <p>Project maintained by <a href="https://github.com/mkrogh">mkrogh</a></p>
+      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+    </footer>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
