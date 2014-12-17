@@ -40,7 +40,7 @@ TSort.models = (function($,_){
     var sortObserver = _.observable();
 
     var sort = function(column, reverse){
-      var i = column || rows[0].length -1
+      var i = column;
       var desc_sort = function(a,b){
         /*if(isNaN(a.columns[i]))
           return a.columns[i].localeCompare(b.columns[i]);
