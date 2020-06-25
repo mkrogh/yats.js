@@ -2,7 +2,7 @@ require "rake"
 
 
 task :server do
-  system "thin -R server.ru start"
+  system "./server.sh"
 end
 
 
@@ -15,15 +15,11 @@ namespace :distribute do
   task :run => [:compile_js]
 
   task :compile_js => [:dist_dir, :html_output] do
-    require "uglifier"
     require "json"
   
     puts "Creating distributable..."
     js_sources = load_js() 
 
-    compiled_js = Uglifier.new.compile(js_sources)
-
-    write_file("dist/yats.min.js", compiled_js)
     write_file("dist/yats.js", js_sources)
   end
   

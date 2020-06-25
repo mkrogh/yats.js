@@ -1,29 +1,11 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    daemons (1.1.9)
-    eventmachine (1.0.3)
-    execjs (2.2.2)
-    json (1.8.1)
-    libv8 (3.16.14.7)
-    rack (1.5.2)
-    ref (1.0.5)
-    therubyracer (0.12.1)
-      libv8 (~> 3.16.14.0)
-      ref
-    thin (1.6.3)
-      daemons (~> 1.0, >= 1.0.9)
-      eventmachine (~> 1.0)
-      rack (~> 1.0)
-    uglifier (2.6.0)
-      execjs (>= 0.3.0)
-      json (>= 1.8.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  rack
-  therubyracer
-  thin
-  uglifier
+
+BUNDLED WITH
+   2.1.2
